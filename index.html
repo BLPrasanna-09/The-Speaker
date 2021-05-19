@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+.*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+.blp{
+  border: 8px solid rgba(119, 55, 55, 0.521);
+  border-radius: 8px;
+  background: url(https://data.whicdn.com/images/313016869/original.gif) 1200px 500px ;
+  padding: 5px;
+  width: 1200px;
+  position:relative;
+  left:30px;
+}
+.blp-img{
+	position:relative;
+    left:-550px;
+}
+.bio {
+  width: 900px;
+  height: 120px;  
+  padding: 20px;
+  
+  margin-bottom: 15px;
+	font-size: 25px;
+	line-height: 20px;
+	color: #e9dbdb;
+	stroke-width:8px;
+	line-height: 1.0;
+	text-align:left;
+	position: absolute;
+  right: 180px;
+  height:auto;
+  top:900px;
+  font-family: 'Akaya Telivigala';
+}
+
+.p{
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;	
+}
+
+.main_container{
+	position: relative;
+}
+
+/* Navigation Bar */
+.navbar{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo a{
+	font-family: 'Allura', cursive;
+	font-size: 60px;
+	color: #fb2274;
+	
+}
+
+.navbar_items ul{
+	display: flex;
+	transition: 2s;
+	animation: blur 1s ease-out infinite;
+}
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 1px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+.navbar_items ul li{
+	margin: 0 20px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* banner_image */
+.banner_image{
+	background: url("https://www.thephotoargus.com/wp-content/uploads/2019/10/sunsetlori.jpg");
+	background-size:1550px 800px;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_content{
+	text-align: relative;
+	right:70%;
+	height:1%;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 40px;
+	margin-bottom: 15px;
+	right:70%;
+}
+
+.banner_content h1 span{
+	color: #fb2274;
+	right:70%;
+
+}
+.banner_content P{
+	font-size:medium;
+	text-align: center;
+}
+
+/* About */
+.about,
+.edu,
+.contactus,
+.ourteam{
+	text-align: center;
+	padding: 5% 10%;
+}
+
+/* Services */
+.edu{
+	background: #f5f5f5;
+	
+}
+.edu_info{
+	font-size: 25px;
+	font-family:"Times New Roman", Times, serif;
+	
+}
+.diff_edu {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+	
+}
+
+.diff_edu .diff_edu_item {
+    width: 30%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.diff_edu .diff_edu_item img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.diff_edu .diff__item h3 {
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+
+/* Contact us */
+.form_wrapper .form_input{
+	font-size:large;
+    width:100%;
+	margin-bottom: 15px;
+	
+}
+.title .form_wrapper .form_input h1{
+	text-align:left;
+}
+/* our team */
+.ourteam{
+	background: #f5f5f5;
+}
+
+.ourteam_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.ourteam_wrapper .team{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+
+.ourteam_wrapper .team_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.ourteam_wrapper .team_members img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.ourteam_wrapper .team_members:hover img{
+	transform: scale(1.1);
+}
+
+footer{
+	height:300px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	background-color: black;
+  border: 2px solid black;
+  padding: 15px;
+ color: white;
+}
+footer p{
+	font-family:'calibri';
+}
+footer p:nth-child(1){
+	font-size:30px;
+	font-weight:bold;
+	color:#faefef;
+	line-height:10px;
+}
+footer p:nth-child(2){
+	font-size:16px;
+	color:#f0eeee;
+	width:600px;
+	text-align:center;
+}
+.social-icons a{
+	width:40px;
+	height:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#e6e3e3;
+	margin:20px 10px;
+	border-radius:50%;
+}
+.social-icons{
+	display:flex;
+}
+.copyright{
+	color:#ffffff;
+	font-size:15px;
+	position:absolute;
+	left:50%;
+	bottom:10px;
+	transform:translatex(-50%);
+}
+.social-icons a:hover,
+.a-social-b a:hover{
+  background-color:#000000;
+  box-shadow:2px 2px 12px rgba(0,0,0,0.2);;
+  transition: all ease 0.5s;
+}
+.social-icons a:hover i,
+.a-social-b a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+.a-social-b{
+	position:fixed;
+	top:50%;
+	right:0px;
+	transform:translateX(-50%);
+}
+.a-social-b a{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:50px;
+	height:50px;
+	padding:0px;
+	margin:0px;
+	line-height:0px;
+	background-color:#ffffff;
+	border:1px solid #cbcbcb;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2)
+}
+.a-social-b i{
+	color:#2b2b2b;
+	font-size: 20px;
+}
+
+
+@media (max-width: 720px){
+
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.logo{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+
+}
+
+
+/* arrow */
+.arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background: #fb2274;
+	border-radius: 50%;
+	display: none;
+}
+
+.arrow img{
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+} 
+    </style>
+	<meta charset="UTF-8">
+	<meta http-equip="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<!--using-FontAwesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="main_container" id="home">
+
+	<div class="navbar">
+		<div class="logo">
+			<a href="#">BLP Portfolio</a>
+		</div>
+		<div class="navbar_items">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#About me">About me</a></li>
+				<li><a href="#Education">Education</a></li>
+				<li><a href="#Achievements">Achievements</a></li>
+	            <li><a href="#contact me">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="banner_image">
+		<div class="banner_content">
+			<h1>Only I can change my life.<br> <span>No one can do it for me.<span></h1>
+			<p>The past cannot be changed. The future is yet in your POWER.</p>
+		</div>	
+	</div>
+
+	<div class="about" id="about">
+		<h1 class="title"><a name="About me">About me</a></h1>
+		<div class="homeheader"><h2>
+		  
+</h2></div>
+		<div class="blp" id="blp">
+		<div class="blp-img"><img src="blp.jpeg" height=400, width=260, style="border:5px solid black"></div>
+	     </div>
+		<div class="bio">-------------MY PORTFOLIO---------------<br><br><br><br>🦋-->Hey there! I'm BONKURI LAKSHMI PRASANNA.
+			<br>👩‍🎓-->I am a first year undergraduate in the Department of Mechanical Engineering enrolled in it's b-tech course at IIT Kharagpur.<br>🏦-->I am a border of SN/IG Hall of Residence.<br>🏡-->I am from Khammam, Telangana.<br> I am a Junior Associate at International Relations Cell.
+			<br>📸-->I really love Photography. Though i'm not a professional photographer, i love the pictures which i captureed on my samsung m31.
+		</div>
+		<div class="btn"><a href="#My Clicks">My Clicks</a></div>
+	</div>
+
+	<div class="edu" id="edu">
+		<h1 class="title"><a name="Education">Education</a></h1>
+		<div class="edu_info"><p>Being 19, I completed 12 years of my education and started my 13th year in this pandemic. At present, I am a first-year undergraduate at IIT Kharagpur.</p></div>
+		<div class="diff_edu">
+			<div class="diff_edu_item">
+				<img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Jawahar_Navodaya_Vidyalaya_logo%2C_jnvlogo.jpg" alt="service_image">
+				
+				<h3 class="sub_title"><a href="https://www.navodaya.gov.in/nvs/nvs-school/KHAMMAM/en/about_us/About-JNV/">Jawahar navodaya vidhyala Palair<br>Khammam,Telangana</a></h3>
+				<p>[2013-2018]<br>I spent 5 of the best years of my life here, passed my CBSE boards in 2018</p>
+			</div>
+			<div class="diff_edu_item">
+				<img src="https://content3.jdmagicbox.com/comp/khammam/z3/9999p8742.8742.170726125711.b8z3/catalogue/harvest-iit-and-medical-academy-khammam-ho-khammam-schools-4b8yi.jpg" alt="service_image" width="659" height="500">
+				<h3 class="sub_title"><a href="http://www.harvestpublicschool.edu.in/">Harvest Sr.Secondary school<br>Khammam,Telangana</a></h3>
+				<p>2 years of gruelling hardwork spent in this coaching center preparing for the JEE, but I'm thankful for it because this place gave me the resources, ability and confidence to reach my next destination.</p>
+			</div>
+			<div class="diff_edu_item">
+				<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/1200px-IIT_Kharagpur_Logo.svg.png" alt="service_image">
+				<h3 class="sub_title"><a href="http://www.iitkgp.ac.in/">IIT Kharagpur<br>Paschim Medinipur,West Bengal</a></h3>
+				<p>[2020-]<br>
+					Currently doing my BTech. in Mechanical Engg. Because of thw pandemic, first year gave nothing, Looking forward to a great 3 upcoming years in this institute.</p>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<div class="ourteam" id="ourteam">
+		<h1 class="title"><a name="My Clicks">My Clicks</a></h1>
+		<div class="ourteam_wrapper">
+			<div class="team-1 team">
+				<div class="team_members" data-name="nathan john"><img src="moneyplant.jpeg" alt="Team_Images"></div>
+				<div class="team_members" data-name="Alyssa Healy"><img src="coin.jpeg" alt="Team_Images"></div>
+				<div class="team_members" data-name="Alec Stewart"><img src="bee.jpeg" alt="Team_Images"></div>
+			</div>
+			<div class="team-2 team">
+				<div class="team_members" data-name="Michael Rippon"><img src="zip.jpeg" alt="Team_Images"></div>
+				<div class="team_members" data-name="Meg Lanning"><img src="moon.jpeg" alt="Team_Images"></div>
+				<div class="team_members" data-name="Sophie Devine"><img src="leaf.jpeg" alt="Team_Images"></div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="contactus" id="contactus">
+		<h1 class="title"><a name="Achievements"></a>Achievements</a></h1>
+		<div class="form_wrapper">
+			<div class="form_input">
+				<h1>JEE ADVANCED</h1>
+				<P>Whatever i have done in my life but clearing Jee Advanced still remains number one.Well thats a thing I am too much proud of beacause worked too hard for it
+					.<br> And I think that'll always be one of my greatest achievements.
+				</P>
+				<p>👉The best is yet to come....STAY TUNED</p>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<footer>
+		<p><a name="contact me">Contact-me:</a></p>
+		<p>Well as you all know Every Human is bit of a social creature and<br> I am no different. You can always get to know more about me here</p>
+		<div class="social-icons">
+	   <a href="https://www.facebook.com/bl.prasanna.39"><i class="fa fa-facebook"></i></a>
+	   <a href="https://www.instagram.com/prasanna_bonkuri_09/"><i  class="fa fa-instagram"> </i></a>
+	   <a href="https://github.com/BLPrasanna-09"><i class="fa fa-github"></i></a>
+	   <a href="https://www.linkedin.com/in/lakshmiprasanna-bonkuri-25092002/"><i class="fa fa-linkedin"></i></a>
+	   <a href="mailto:prasannabonkuri09@gmail.com"><i class="fa fa-envelope"></i></a>
+	   
+	</div>
+	<!--copyright-->
+<p class="copyright">Copyright by ©BLP Creations</p>
+</footer>
+<div class="a-social-b">
+	<a href="https://www.facebook.com/bl.prasanna.39"><i class="fa fa-facebook"></i></a>
+	<a href="https://www.instagram.com/prasanna_bonkuri_09/"><i  class="fa fa-instagram"> </i></a>
+	<a href="https://github.com/BLPrasanna-09"><i class="fa fa-github"></i></a>
+	<a href="https://www.linkedin.com/in/lakshmiprasanna-bonkuri-25092002/"><i class="fa fa-linkedin"></i></a>
+	<a href="mailto:prasannabonkuri09@gmail.com"><i class="fa fa-envelope"></i></a>
+	
+ </div>
+
+	<div class="arrow">
+		<a href="#home"><img src="https://image.flaticon.com/icons/png/512/55/55008.png" alt="up_arrow"></a>
+	</div>
+</div>	
+
+</body>
+</html> 
